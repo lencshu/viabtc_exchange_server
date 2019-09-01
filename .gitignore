@@ -35,6 +35,7 @@ core*
 *.swp
 *.swo
 *.txt
+!CMakeLists.txt
 *.log
 tags
 

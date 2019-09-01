@@ -8,9 +8,13 @@ export PATH=/c/Tools/TDM-GCC-64/bin:$PATH
 # export PATH=/c/Tools/Python27:$PATH
 export PATH=/c/Tools/msys64/mingw64/bin:$PATH
 
+mkdir build || echo already exist
 cd build
 
-cmake -G "MinGW Makefiles" .. || echo 'will start again'
-cmake -G "MinGW Makefiles" ..
+cmake .. || echo 'will start again'
+cmake ..
 
-mingw32-make accesshttp
+# cmake -G "MinGW Makefiles" .. || echo 'will start again'
+# cmake -G "MinGW Makefiles" ..
+
+make accesshttp

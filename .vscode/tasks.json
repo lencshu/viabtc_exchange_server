@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "./run.sh",
+            "command": "sh run.sh",
             "args": [
                 // Ask msbuild to generate full paths for file names.
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
